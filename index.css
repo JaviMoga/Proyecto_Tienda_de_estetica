@@ -1,0 +1,291 @@
+html {
+  zoom: 81%;
+}
+
+body {
+  margin: 0px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+  margin-top: 0%;
+}
+
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -110px;
+  height: 110px;
+  visibility: hidden;
+}
+
+nav {
+  margin-top: 0%;
+
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 50px;
+  padding: 12px 0;
+
+  position: relative;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+nav ul li a::before {
+  display: block;
+  content: '';
+  width: 0%;
+  background: #2c2a2a;
+  height: 1px;
+  top: 0;
+  position: absolute;
+  transition: width 0.5s;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+#logo {
+  width: 8.938em;
+  height: 7.813em;
+  float: left;
+  padding: 0.5em;
+}
+
+
+.contact{
+  margin-top: 5%;
+}
+/* ___________________________________ */
+
+
+#foto_propia{
+  width: 100%;
+  height: 70%;
+  margin-top: 0%;
+}
+.iconos_nav{
+  width: 2.938em;
+  height: 2.813em;
+  float: left;
+  padding: 0.5em;
+}
+.nav{
+  padding: 25px 25px 25px 25px;
+}
+#ruta{
+  width: 90%;
+  height: 70%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+.texto2{
+  text-align: justify;
+}
+
+
+.proyectos_mios table {
+  margin-top: 5%;
+  width: 100%;
+
+}
+
+
+.card {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin-top: 0%;
+  /* width: 18rem; */
+
+}
+
+.espaciado_entre_cartas {
+  margin-top: 5%;
+}
+
+
+.espaciado {
+  margin-top: 2%;
+}
+
+.espaciado_mayor {
+  margin-top: 5%;
+}
+
+
+
+
+li {
+  text-decoration: none;
+  list-style: none;
+
+}
+
+
+
+a:link, a:visited, a:active {
+  text-decoration:none;
+  color: black;
+}
+
+
+.footer {
+  
+  word-spacing: 0.5em;
+  margin-bottom: 8%;
+  color: black;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1400PX Tablet */
+@media screen and (max-width: 1400px) {
+  body {
+    font-size: 25px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr:nth-of-type(2n) {
+    background-color: inherit;
+  }
+
+  tr td:first-child {
+    background: #f0f0f0;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
+
+  /* Hasta aqui para las card */
+  .presentacion {
+    padding: 1%, 1%;
+    text-align: initial;
+  }
+
+  nav {
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: 0%;
+
+  }
+
+  #logo_poke {
+    width: 105px;
+    height: 70px;
+    float: left;
+    padding: 8px;
+  }
+
+  .proyectos_mios {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+  }
+
+  .item-align {
+    text-align: center;
+    padding: 0px;
+    margin: 0%;
+  }
+
+  .imagen_home {
+    width: 100%;
+  }
+  .text-1400{
+   margin-top: 5%;
+ text-align: center;
+  }
+  #foto_propia{
+    width: 100%;
+    height: 70%;
+    margin-top: 10%;
+  }
+
+  
+}
+
+/* Apartado Para Movil*/
+@media screen and (max-width: 991px) {
+  #imagen_pro_right{
+    margin-top: 5%;
+    }
+    .foto-perf-991{
+      margin-top: 5%;
+      width: 100%;
+      margin-left: 0%;
+    }
+    #ruta{
+      width: 90%;
+      height: 70%;
+      margin-top: 5%;
+      margin-left: 5%;
+    }
+   
+}
+
