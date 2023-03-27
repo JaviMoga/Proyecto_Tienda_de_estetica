@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="Fotos/Logo/Logo.jpg" />
     <link rel="stylesheet" href="main.css">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <title>Belus jmg</title>
+    <title>Belus</title>
 </head>
 
 <body>
@@ -34,16 +34,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav mx-auto ">
-                        <li class="nav-item navbar-nav item-align">
-                            <a class="nav-link active nav" href="#home">Home</a>
-                        </li>
+                        
                         <li class="nav-item item-align">
-                            <a class="nav-link active nav" href="#Productos">Nosotros</a>
+                            <a class="nav-link active nav" href="#Nosotros">Nosotros</a>
                         </li>
                         <li class="nav-item item-align">
                             <a class="nav-link active nav " aria-current="page" href="#Servicios">Servicios</a>
                         </li>
-
+                        <li class="nav-item navbar-nav item-align">
+                            <a class="nav-link active nav nav" href="#Productos">Productos</a>
+                        </li>
                         <li class="nav-item navbar-nav item-align">
                             <a class="nav-link active nav nav" href="#Contacto">Contacto</a>
                         </li>
@@ -60,34 +60,68 @@
         </nav>
 
         <section>
-            <div>
+            <div id="carouselExampleIndicators" class="carousel slide carrusel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active carrusel" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Fotos/Baner/baner_files/baner1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Fotos/Baner/baner_files/baner1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Fotos/Baner/baner_files/baner1.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev carrusel" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <!-- <div>
                 <img id="foto_propia" src="Fotos/Baner/baner_files/baner1.png" class="img-fluid">
-            </div>
+            </div> -->
         </section>
 
 
         <div class="espaciado"> </div><!-- Espaciado -->
 
-        <section id="Descripción">
-            <samp class="ancla" id="about"></samp>
+        <section id="Nosotros">
+            <samp class="ancla" id="Nosotros"></samp>
             <div class="about">
                 <!-- <div style="background-color: rgb(255, 0, 119); height:100%;"> -->
                 <hr>
                 <div class="row ">
                     <div class="col-lg-0"></div>
-                    <div class="col-lg-7 "><!-- Primera columna About -->
+                    <div class="col-lg-8 "><!-- Primera columna About -->
 
                        
-                        <h4>Titulo</h4>
+                        <h1 id="titulo_nosotros" class="tipodeletra">Belu's</h1>
 
                         <!-- <div style="background-color: rgb(38, 255, 0); height:100%;"> -->
-                        <p class="text-break text-1400">
-                            Texto Ejemplo
+                        <p id="texto_nosotros"class="text-break text-1400 ">
+                            Belu's es una clinica de estética que se especializa en ofrecer servicios
+                            de belleza de alta calidad para mujeres y hombres. <br><br>
+                            
+                            En nuestra clinica, los clientes pueden encontrar una amplia gama 
+                            de servicios de cuidado personal, desde servicios de manicura,
+                            pedicura, maquillaje y tratamientos faciales. <br><br>
+                            
+                            Además, ofrecemos servicios de depilación y masajes, así como una 
+                            selección de productos de belleza de las mejores marcas del mercado
                         </p>
                         <!-- </div> -->
                     </div>
                     <div class="col-lg-4 "><!-- Segunda columna About -->
-                        <img id="foto_propia" src="#" class="img-fluid foto-perf-991">
+                        <img id="foto_propia" src="Fotos/Baner/Sobre nosotros.png" class="img-fluid foto-perf-991">
                         <!-- <div style="background-color: rgb(0, 255, 238); height:100%;">IMAGEN</div> -->
                     </div>
                 </div>
